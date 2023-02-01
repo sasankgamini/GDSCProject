@@ -52,5 +52,5 @@ mapurl = "file:///Users/sasankgamini/Desktop/GDSCProject/newTest.html" #You have
 driver = webdriver.Chrome(options=Options())
 driver.get(mapurl)
 time.sleep(3)
-driver.save_screenshot("output.png")
+driver.save_screenshot("outpuAfter.png")
 driver.quit()
