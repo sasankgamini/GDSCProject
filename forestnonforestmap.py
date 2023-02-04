@@ -1,4 +1,5 @@
 import folium
+#selium used to save image from web
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import time
@@ -38,7 +39,7 @@ folium.Map.add_ee_layer = add_ee_layer
 
 
 #Create a folium map object
-my_map = folium.Map(location = [-20,-60], zoom_start = 4) #(y,x)
+my_map = folium.Map(location = [-20,-60], zoom_start = 4) #(y,x) south America: -20,-60
 
 #add the layer to the map object
 my_map.add_ee_layer(forestNonForest, forestNonForestVis, 'Forest/Non-Forest')
@@ -47,10 +48,10 @@ my_map.add_ee_layer(forestNonForest, forestNonForestVis, 'Forest/Non-Forest')
 my_map.add_child(folium.LayerControl())
 
 #saving and displaying image
-my_map.save('/Users/sasankgamini/Desktop/GDSCProject/newTest.html')
-mapurl = "file:///Users/sasankgamini/Desktop/GDSCProject/newTest.html" #You have to give full path to your HTML file
+my_map.save('/Users/sasankgamini/Desktop/GDSCProject/GDSCProject/deforestationMap.html')
+mapurl = "file:///Users/sasankgamini/Desktop/GDSCProject/GDSCProject/deforestationMap.html" #You have to give full path to your HTML file
 driver = webdriver.Chrome(options=Options())
 driver.get(mapurl)
 time.sleep(3)
-driver.save_screenshot("outpuAfter.png")
+driver.save_screenshot("outputAfter.png")
 driver.quit()
