@@ -48,12 +48,12 @@ def getBeforeAndAfterImages(coordinates):
     my_map.save('/Users/sasankgamini/Desktop/GDSCProject/GDSCProject/deforestationMap.html')
     mapurl = "file:///Users/sasankgamini/Desktop/GDSCProject/GDSCProject/deforestationMap.html" #You have to give full path to your HTML file
     chrome_options = Options()
-    # chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--headless')
     # chrome_options.add_argument('window-size=1600,900')
     # driver = webdriver.Chrome(options=chrome_options)
     driver = webdriver.Chrome(options=chrome_options)
     driver.get(mapurl)
-    time.sleep(3)
+    time.sleep(1)
     driver.save_screenshot("static/outputBefore.png")
     driver.quit()
 
@@ -83,12 +83,11 @@ def getBeforeAndAfterImages(coordinates):
     my_map1.save('/Users/sasankgamini/Desktop/GDSCProject/GDSCProject/deforestationMap.html')
     mapurl1 = "file:///Users/sasankgamini/Desktop/GDSCProject/GDSCProject/deforestationMap.html" #You have to give full path to your HTML file
     chrome_options1 = Options()
-    # chrome_options1.add_argument('--headless')
+    chrome_options1.add_argument('--headless')
     # chrome_options1.add_argument('window-size=1600,900')
-    # driver1 = webdriver.Chrome(options=chrome_options1)
     driver1 = webdriver.Chrome(options=chrome_options1)
     driver1.get(mapurl)
-    time.sleep(3)
+    time.sleep(1)
     driver1.save_screenshot("static/outputAfter.png")
     driver1.quit()
 
