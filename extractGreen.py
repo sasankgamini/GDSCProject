@@ -2,7 +2,6 @@ import cv2
 import numpy as np
 
 #IMAGE BEFORE
-
 imageBefore = cv2.imread('outputBefore.png')
 imageBefore = cv2.resize(imageBefore, (600,480))
 #convert to hsv to make it easier to find range of green
