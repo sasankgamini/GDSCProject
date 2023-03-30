@@ -53,7 +53,7 @@ def getBeforeAndAfterImages(coordinates):
     # driver = webdriver.Chrome(options=chrome_options)
     driver = webdriver.Chrome(options=chrome_options)
     driver.get(mapurl)
-    time.sleep(1)
+    time.sleep(3)
     driver.save_screenshot("static/outputBefore.png")
     driver.quit()
 
@@ -87,7 +87,7 @@ def getBeforeAndAfterImages(coordinates):
     # chrome_options1.add_argument('window-size=1600,900')
     driver1 = webdriver.Chrome(options=chrome_options1)
     driver1.get(mapurl)
-    time.sleep(1)
+    time.sleep(3)
     driver1.save_screenshot("static/outputAfter.png")
     driver1.quit()
 
